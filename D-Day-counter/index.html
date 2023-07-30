@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>D-day counter</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- defer속성을 사용하면 script와 html 문서가 동시에 생성 -->
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <h1>D-Day</h1>
+    <div id="d-day-container">
+        <div class="d-day-child-container">
+            <span id="days">0</span>
+            <span>일</span>
+        </div>
+        <div class="d-day-child-container">
+            <span id="hours">0</span>
+            <span>시간</span>
+        </div>
+        <div class="d-day-child-container">
+            <span id="min">0</span>
+            <span>분</span>
+        </div>
+        <div class="d-day-child-container">
+            <span id="sec">0</span>
+            <span>초</span>
+        </div>
+    </div>
+    <div id="d-day-message"></div>
+    <div id="target-selector">
+        <input type="text" id="target-year-input" class="target-input" size="5" maxlength="4">
+        <input type="text" id="target-month-input" class="target-input" size="3" maxlength="2">
+        <input type="text" id="target-day-input" class="target-input" size="3" maxlength="2">
+    </div>
+    <button type="button" onclick="starter()" class="btn">카운트다운 시작</button>
+    <button type="button" onclick="resetTimer()" class="btn">타이머 초기화</button>
+</body>
+</html>
